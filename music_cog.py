@@ -100,3 +100,4 @@ class music_cog(commands.Cog):
             self.vc.stop()
             #try to play next in the queue if it exists
             await self.play_music()
+            
