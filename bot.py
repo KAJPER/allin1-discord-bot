@@ -13,6 +13,11 @@ intents = discord.Intents(messages = True, guilds = True, reactions = True, memb
 client = commands.Bot(command_prefix = '.', intents = intents)
 
 
+@client.event
+async def on_ready():
+    print('Bot is ready! made by KAJPA#9999')
+
+
 @client.command()
 async def ping(ctx):
     await ctx.send(f'Pong! {round(client.latency * 1000)}ms')
@@ -107,4 +112,4 @@ async def stop(ctx):
 
 
 
-client.run('ODY3NDk2Njc4Njk3MDc0Njkw.YPh9PQ.R9sEJ2DMcjyUgheadQI9NFDRs7o')
+client.run('')
